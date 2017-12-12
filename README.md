@@ -1,4 +1,4 @@
-# PROPAS (The PROperty PAtten Specification and Analysis)
+# PROPAS (The **PRO**perty **PA**tten **S**pecification and Analysis)
 
 ## Short Summary
 
