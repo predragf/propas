@@ -2,7 +2,10 @@
 
 ## Short Summary
 
-PROPAS (The **PRO**perty **PA**tten **S**pecification and Analysis) is a tool set for automated and formal consistency analysis of industrial critical requirements. It consists of three separate engines that provide the overall functionality:
+PROPAS (The **PRO**perty **PA**tten **S**pecification and Analysis) is a tool set for automated and formal consistency analysis of industrial critical requirements based on Satisfiability Modulo Theories, which is available [here](http://www.es.mdh.se/publications/4583-SMT_based_Consistency_Analysis_of_Industrial_Systems_Requirements).
+
+
+It consists of three separate engines that provide the overall functionality:
 
 
 ### PROPAS UI 
@@ -16,8 +19,12 @@ PROPAS (The **PRO**perty **PA**tten **S**pecification and Analysis) is a tool se
   
    The transformation of the TCTL properties into SMT-LIB assertions is performed in following steps:
     
-   1. Parsing the TCTL formulas (given as strings) into a Binary Tree (BT) structure that isolates the syntax parts of the formula. The inner nodes of the Binary Tree represent the operators (path quantifiers, path specific temporal operators, logical operators, arithmetic operators, etc.), whereas the leaf nodes contain the atomic propositions from the formula.
+   * Parsing the TCTL formulas (given as strings) into a Binary Tree (BT) structure that isolates the syntax parts of the formula. The inner nodes of the Binary Tree represent the operators (path quantifiers, path specific temporal operators, logical operators, arithmetic operators, etc.), whereas the leaf nodes contain the atomic propositions from the formula.
     
-  2. Transformation of the (BT) structures into SMT-LIB assetions. For each of the formulas represented as BT structure the SMTLiBReq library creates two types of assertions:
+  * Transformation of the (BT) structures into SMT-LIB assetions. For each of the formulas represented as BT structure the SMTLiBReq library creates two types of assertions:
     * declaration for the atomic propositions (be they SMT-LIB constants or functions).
     * constaints over the allowed set of values of that particular atomic proposition.
+
+### Z3 SMT Solver
+
+  The current version of the PROPAS tool uses Z3 from Microsoft Research as consistency checking engine.
