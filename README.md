@@ -1,8 +1,8 @@
-# PROPAS (The **PRO**perty **PA**tten **S**pecification and Analysis)
+# PROPAS Tool Summary
 
 ## Short Summary
 
-PROPAS is a tool set for automated and formal consistency analysis of industrial critical requirements. It consists of three separate engines that provide the overall functionality:
+PROPAS (The **PRO**perty **PA**tten **S**pecification and Analysis) is a tool set for automated and formal consistency analysis of industrial critical requirements. It consists of three separate engines that provide the overall functionality:
 
 
 ### PROPAS UI 
