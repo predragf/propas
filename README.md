@@ -2,7 +2,7 @@
 
 ## Short Summary
 
-PROPAS (The **PRO**perty **PA**tten **S**pecification and Analysis) is a tool set for automated and formal consistency analysis of industrial critical requirements based on Satisfiability Modulo Theories [#filipovikjACA].
+PROPAS (The **PRO**perty **PA**tten **S**pecification and Analysis) is a tool set for automated and formal consistency analysis of industrial critical requirements based on Satisfiability Modulo Theories [1](#filipovikjACA).
 
 
 It consists of three separate engines that provide the overall functionality:
@@ -17,7 +17,7 @@ It consists of three separate engines that provide the overall functionality:
 #### What is SMTLibReq? ####
 
 SMTLibReq is the part of the PROPAS tool which generates an SMT-LIB script suitable for checking based
-on the formal system specification encoded in TCTL. The parser operates according to the 1:1 principle, meaning that there is a one to one mapping between the TCTL properties [#alurMCDT] and the SMT-Lib assertions that constiture the SMT-Lib script [#smtlib]. The library supports parsing and transformation of arbitrary nested TCTL formulas.
+on the formal system specification encoded in TCTL. The parser operates according to the 1:1 principle, meaning that there is a one to one mapping between the TCTL properties [2](#alurMCDT) and the SMT-Lib assertions that constiture the SMT-Lib script [3](#smtlib). The library supports parsing and transformation of arbitrary nested TCTL formulas.
 
 The complete transformation of TCTL properties into SMT-LIB assertions is divided into two major steps:
 
@@ -60,7 +60,7 @@ The way the TCTL formula binary trees are transformed into SMT-Lib assertion is 
 The SMTLibReq library provides a template-based transformation of TCTL formulas into SMT-Lib assertions. As presented in the previous section, the input to the transformation procedure is the binary-tree reprentation of the formula. 
 
 The implemented transformation algorithm works as follows:
-	The traversal of the binary-tree representation of the TCTL formula is done in a top-down manner. Each of the operators in the formula are transformed using a predefined template. In order to be able to specify timing requirements, each atomic proposition is a function of time, which in the provided tranformation (encoding) is represented as real-valued variable. For the details on the proposed transformation approach we reffer our readers to [#filipovikjACA].
+	The traversal of the binary-tree representation of the TCTL formula is done in a top-down manner. Each of the operators in the formula are transformed using a predefined template. In order to be able to specify timing requirements, each atomic proposition is a function of time, which in the provided tranformation (encoding) is represented as real-valued variable. For the details on the proposed transformation approach we reffer our readers to [1](#filipovikjACA).
 	
 For illustration, let us revisit the previous example and show how the TCTL formula is transformed into an SMT-Lib assertion.
 
@@ -80,7 +80,7 @@ The implementation of the SMTLibReq is within the frames of the proposed theoret
 
 ### Z3 SMT Solver
 
-  The current version of the PROPAS tool uses Z3 [#deMouraZ3] SMT solver and theorem prover from Microsoft Research as consistency checking engine.
+  The current version of the PROPAS tool uses Z3 [4](#deMouraZ3) SMT solver and theorem prover from Microsoft Research as consistency checking engine.
 
 ### Who do I talk to? ###
 
@@ -93,6 +93,5 @@ For any inquiry please contact the developer: Predrag Filipovikj <predrag.filipo
 [2](#alurMCDT) Alur, R., Courcoubetis, C. and Dill, D., 1990, June. Model-checking for real-time systems. In Logic in Computer Science, 1990. LICS'90, Proceedings., Fifth Annual IEEE Symposium on e (pp. 414-425). IEEE.
 
 [3](#smtlib) Barrett, C., Stump, A. and Tinelli, C., 2010, July. The smt-lib standard: Version 2.0. In Proceedings of the 8th International Workshop on Satisfiability Modulo Theories (Edinburgh, England) (Vol. 13, p. 14).
-
 
 [4](deMouraZ3) De Moura, L. and Bjørner, N., 2008, March. Z3: An efficient SMT solver. In International conference on Tools and Algorithms for the Construction and Analysis of Systems (pp. 337-340). Springer, Berlin, Heidelberg.
