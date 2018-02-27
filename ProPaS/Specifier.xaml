@@ -1,0 +1,16 @@
+﻿<Window x:Class="ProPaS.Specifier"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProPaS"
+        mc:Ignorable="d"
+        Title="ProPaS: Specifier" Height="600" Width="500">
+    <Grid>
+        <ListBox HorizontalAlignment="Left" Height="100" Margin="10,45.169,0,0" VerticalAlignment="Top" Width="178.462"/>
+        <ListBox HorizontalAlignment="Left" Height="100" Margin="285.385,45.169,0,0" VerticalAlignment="Top" Width="188.615"/>
+        <StackPanel HorizontalAlignment="Left" Height="100" Margin="10,177.631,0,0" VerticalAlignment="Top" Width="464">
+            <TextBox Height="23" TextWrapping="Wrap"  Text="{Binding Testing}"/>
+        </StackPanel>
+    </Grid>
+</Window>
