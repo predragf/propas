@@ -84,7 +84,9 @@ The implementation of the SMTLibReq is within the frames of the proposed theoret
 
 ### Who do I talk to? ###
 
-For any inquiry please contact the developer: Predrag Filipovikj <predrag.filipovikj@mdh.se>.
+For any inquiry please contact the developer: Predrag Filipovikj <predrag__dot__filipovikj__at__gmail.com>*.
+
+* email obfuscated to prevent bots from collecting it. For the actual mail, replace __dot__ and __at__ with corresponding special characters (. @).
 
 ### References
 
